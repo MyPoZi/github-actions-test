@@ -1,0 +1,13 @@
+name: WIP
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: WIP
+        uses: wip/action@v1.0.0
+
