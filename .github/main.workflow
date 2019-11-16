@@ -1,9 +1,15 @@
-workflow "Delete the branch on pull request merge" {
-  on = "pull_request"
-  resolves = ["branch cleanup"]
+workflow "New workflow" {
+  on = "push"
+  resolves = ["ACTION2"]
 }
 
-action "branch cleanup" {
-  uses = "jessfraz/branch-cleanup-action@master"
-  secrets = ["GITHUB_TOKEN"]
+action "ACTION1" {
+  uses = "./action-a"
+  args = "\"Hello world, I'm Action1!\""
+}
+
+action "ACTION2" {
+  needs = "ACTION1"
+  uses = "./action-a"
+  args = "\"Hello world, I'm Action2!\""
 }
