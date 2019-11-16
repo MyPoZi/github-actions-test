@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MyPoZi/github-actions-test/issues"
   },
-  "homepage": "https://github.com/MyPoZi/github-actions-test#readme"
+  "homepage": "https://github.com/MyPoZi/github-actions-test#readme",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
 }
