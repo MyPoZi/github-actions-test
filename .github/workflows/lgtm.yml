@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@1.0.0
       - uses: micnncim/action-lgtm-reaction@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
