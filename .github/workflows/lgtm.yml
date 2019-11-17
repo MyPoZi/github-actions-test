@@ -11,12 +11,12 @@ jobs:
       - uses: actions/checkout@1.0.0
       - uses: micnncim/action-lgtm-reaction@v0.5.4
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_COMMENT_BODY: ${{ github.event.comment.body }}
           GITHUB_COMMENT_ID: ${{ github.event.comment.id }}
           GITHUB_PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
-          GITHUB_REVIEW_BODY: test
-          GITHUB_REVIEW_ID: test
+          GITHUB_REVIEW_BODY: "test"
+          GITHUB_REVIEW_ID: "test"
